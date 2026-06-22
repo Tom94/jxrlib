@@ -27,6 +27,8 @@
 //*@@@---@@@@******************************************************************
 #pragma once
 
+#include <stdint.h>
+
 //================================
 // bitio functions
 //================================
@@ -38,20 +40,13 @@
 #define writeIS_L1(pSC, pIO) writeIS(pSC, pIO)
 #define writeIS_L2(pSC, pIO) (void)(pSC, pIO)
 
-
 //================================
 // common defines
 //================================
 #define FORCE_INLINE
 #define CDECL
-#if __LP64__
-#define UINTPTR_T unsigned long long
-#define INTPTR_T long long
-#else
-#define UINTPTR_T unsigned int
-#define INTPTR_T int
-#endif
-
+#define UINTPTR_T uintptr_t
+#define INTPTR_T intptr_t
 
 //================================
 // quantization optimization
