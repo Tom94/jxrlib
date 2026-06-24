@@ -1745,8 +1745,8 @@ ERR ParsePFDEntry(
             break;
 
         default:
-            fprintf(stderr, "Unrecognized WMPTag: %d(%#x), %d, %d, %#x" CRLF,
-                (int)uTag, (int)uTag, (int)uType, (int)uCount, (int)uValue);
+            // fprintf(stderr, "Unrecognized WMPTag: %d(%#x), %d, %d, %#x" CRLF,
+            //     (int)uTag, (int)uTag, (int)uType, (int)uCount, (int)uValue);
             break;
     }
 
